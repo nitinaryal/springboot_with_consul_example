@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cpp
+  profiles:
+    active: pt
+  cloud:
+    consul:
+      host: http://localhost
+      port: 8500
+      enabled: true
+      discovery: {healthCheckInterval: 300s}
+      config:
+        enabled: true
+
+db:
+ url: "dev"
